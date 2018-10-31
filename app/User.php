@@ -12,7 +12,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password',    
     ];
     /**
      * The attributes that should be hidden for arrays.
@@ -28,9 +28,9 @@ class User extends Authenticatable
 
 
     }
-    public function setTitleAttribute($value){
+   /* public function setTitleAttribute($value){
         $this->attributes['title'] = $value;
         $this->attribute['slug'] = str_slug($value);
 
-    }
+    }*/
 }
